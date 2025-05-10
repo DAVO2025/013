@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>controler</title>
+  <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+  <div class="overlay" data-overlay></div>
+<!--welcome-windows----------------------------------------------------------------------------------------------------------------->
+  <div class="modal" data-modal>
+    <div class="modal-close-overlay" data-modal-overlay></div>
+    <div class="modal-content">
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="newsletter-img">
+        <img src="./assets/img/logo/logo.png" width="400" height="400">
+      </div>
+      <div class="newsletter">
+        <form action="#">
+          <div class="newsletter-header">
+            <h3 class="newsletter-title">This Website is (DEMO) for DAVO company</h3>
+            <p class="newsletter-desc">
+              you can see this website to <b>order</b> it for your job.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!--offer--windows--------------------------------------------------------------------------------------------------------------------->
+  <div class="notification-toast" data-toast>
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon><title>close</title>
+    </button>
+    <a href="https://wa.me/message/BD3TOKSISEW3J1"> 
+    </a>
+    <div class="toast-detail">
+      <p class="toast-message">
+        order this website
+      </p>
+      <a href="https://wa.me/message/BD3TOKSISEW3J1"> 
+      <p class="toast-title">Order it <b>Now</b></p>
+      </a>
+    </div>
+  </div>
+<!--heder------------------------------------------------------------------------------------------------------------------------->
+  <header>
+    <div class="header-main">
+      <div class="container">
+        <a href="#footer" class="header-logo">
+          <img src="./assets/img/logo/logo.png" height="50">
+        </a>
+        <div class="header-user-actions">
+          <ul class="header-social-container">
+            <li>
+              <a href="https://www.youtube.com/channel/UC-ZJ6ZWCHLnWMZUU3rmJDBw" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61571213527794" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/+963954035434" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/davo.syria?igsh=aHl0YWp0bjhwb2c4" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/davo-syria-737a48364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+<!------------------------------------------------------------------------->
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+
+      <a href="#top">
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+      </a>
+
+
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+<!--menu---------------------------------------------------------------------------------------------------------->
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <a href="#top" class="menu-title">Home</a>
+        </li>
+      </ul>
+      <div class="menu-bottom">
+<!--language-menu--------------------------------------------------------------------------------------------------->
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Language 1</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Language 2</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Language 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+<!--social-media-menu--------------------------------------------------------------------------------------------------->
+        <ul class="menu-social-container">
+          <li>
+            <a href="https://www.youtube.com/channel/UC-ZJ6ZWCHLnWMZUU3rmJDBw" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61571213527794" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+963954035434" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/davo.syria?igsh=aHl0YWp0bjhwb2c4" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/davo-syria-737a48364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <div class="product-container">
+      <div class="container">
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">best sellers</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+<!----------best sellers-------------------------------------------------------------------------------------------------------------------------------------------------->
+
+          <div class="product-showcase">
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/img/products/p (3).png" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">xxx</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$50.00</del>
+                      <p class="price">$40.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/img/products/p (10).png" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">xxx</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$65.00</del>
+                      <p class="price">$50.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/img/products/p (1).png" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">xxx</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$70.00</del>
+                      <p class="price">$50.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/img/products/p (16).png" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">xxx</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$25.00</del>
+                      <p class="price">$20.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+<!------------TOP SELL------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+        <div class="product-box">
+<div class="product-featured">
+      
+            <div class="showcase-wrapper has-scrollbar">
+      
+              <div class="showcase-container">
+      
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/img/products/p (2).png" class="showcase-img">
+                  </div>
+      
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+      
+                    <a href="#">
+                      <h3 class="showcase-title">xxx</h3>
+                    </a>
+      
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+      
+                    <div class="price-box">
+                      <p class="price">$40.00</p>
+      
+                      <del>$50.00</del>
+                    </div>
+      
+                   <a href=""><button class="add-cart-btn">Order Now</button></a>
+           
+                  </div>
+      
+                </div>
+      
+              </div>
+      
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/img/products/p (3).png" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">xxx</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$30.00</p>
+                      <del>$45.00</del>
+                    </div>
+              
+                    <a href=""><button class="add-cart-btn">Order Now</button></a>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+      
+            </div>
+      
+          </div><div class="product-main">
+        
+      
+            <div class="product-grid">
+      
+              <div class="showcase">
+      
+                <div class="showcase-banner">
+      
+                  <img src="./assets/img/products/p (3).png" width="300" class="product-img default">
+                  <img src="./assets/img/products/p (3).png" width="300" class="product-img hover">
+      
+                  <p class="showcase-badge">30%</p>
+      
+                  <div class="showcase-actions">
+      
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+      
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+      
+                  </div>
+      
+                </div>
+      
+                <div class="showcase-content">
+      
+                  <a href="#" class="showcase-category">xxx</a>
+      
+                  <a href="#">
+                    <h3 class="showcase-title">xxxxxx</h3>
+                  </a>
+      
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+      
+                  <div class="price-box">
+                    <p class="price">$30.00</p>
+                    <del>$45.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+      
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (4).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (4).png" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$15.00</p>
+                    <del>$20.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (2).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (2).png" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$30.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (5).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (5).png" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$30.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (6).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (6).png" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$50.00</p>
+                    <del>$70.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (7).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (7).png" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$69.00</p>
+                    <del>$90.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (1).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (1).png" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$50.00</p>
+                    <del>$70.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (8).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (8).png" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$80.00</p>
+                    <del>$100.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (9).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (9).png" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$35.00</p>
+                    <del>$45.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (10).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (10).png" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$50.00</p>
+                    <del>$65.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (11).png" class="product-img default"
+                    width="300">
+                  <img src="./assets/img/products/p (11).png" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxxxxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$20.00</p>
+                    <del>$25.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (12).png"
+                    class="product-img default" width="300">
+                  <img src="./assets/img/products/p (12).png"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxxxxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$40.00</p>
+                    <del>$50.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+                            <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (13).png"
+                    class="product-img default" width="300">
+                  <img src="./assets/img/products/p (13).png"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxxxxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$40.00</p>
+                    <del>$50.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+                            <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (14).png"
+                    class="product-img default" width="300">
+                  <img src="./assets/img/products/p (14).png"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxxxxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$40.00</p>
+                    <del>$50.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+                            <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (15).png"
+                    class="product-img default" width="300">
+                  <img src="./assets/img/products/p (15).png"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxxxxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$40.00</p>
+                    <del>$50.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+                            <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/img/products/p (16).png"
+                    class="product-img default" width="300">
+                  <img src="./assets/img/products/p (16).png"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+      
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+                            
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">xxxxxx</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">xxx</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$40.00</p>
+                    <del>$50.00</del>
+                  </div>
+                  <a href=""><button class="add-cart-btn">Order Now</button></a>
+                </div>
+              
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+        </div>
+        
+        </div>
+  
+          </div>
+
+        </div>
+
+        
+      </div>
+       
+
+    </div>
+    
+
+    
+  
+
+</div>
+
+  </main>
+<!---contact--------------------------------------------------------------------------------------------------------------------------------->
+  <footer id="footer">
+    <div class="footer-nav">
+      <div class="container">
+        <ul class="contact-list">
+<!------------------------------Address--------------------------->
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="nav-title">Address:</h3>
+                <address class="contact-info">xxx xxx xxx xxx xxx</address>
+              </div>
+            </li>
+<!------------------------------tel---------------------------->
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="nav-title">Phone:</h3>
+              <a href="tel:+963954035434" class="contact-info">+(xxx) xxx xxx xxx</a>
+              </div>
+                            <div class="wrapper">
+                <h3 class="nav-title">Barcode:</h3>
+                  <a href="#" class="contact-info">010122025</a>
+              </div>
+            </li>
+        </ul>
+        <ul class="footer-nav-list">
+          <li class="contact-list-item">
+            <div class="contact-item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="wrapper">
+              <h3 class="nav-title">follow us:</h3>
+              <li>
+                <ul class="social-link">
+                  <li class="footer-nav-item">
+                    <a href="https://www.youtube.com/channel/UC-ZJ6ZWCHLnWMZUU3rmJDBw" class="footer-nav-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="https://www.facebook.com/profile.php?id=61571213527794" class="footer-nav-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="https://wa.me/+963954035434" class="footer-nav-link">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="https://www.instagram.com/davo.syria?igsh=aHl0YWp0bjhwb2c4" class="footer-nav-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="https://www.linkedin.com/in/davo-syria-737a48364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-nav-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+<!---Copyright-cash------------------------------------------------------------------------------------------------------------------------>
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/img/payment.png" class="payment-img">
+        <p class="copyright">
+          Copyright &copy; <a href="https://davo2025.github.io/DAVO.sy/home">DAVO</a> all rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+<!---links--------------------------------------------------------------------------------------------------------------------------------->
+<a href="#top" class="go-top" data-go-top title="Go to Top"><ion-icon name="arrow-up"></ion-icon></a>
+<script src="./assets/js/script.js"></script> 
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
